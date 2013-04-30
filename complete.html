@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body style="margin:0px; padding:0px;">
+
+<script type="text/javascript">
+
+function loadMovinaryLibrary(e,t,n){function i(){loadScript(r,function(){var i="#movinary-iframe";var s={};if(typeof e==="string"&&e!=r)i=e;else if(typeof t==="string")i=t;if(typeof e==="object"&&e!=null)s=e;else if(typeof t==="object"&&t!=null)s=t;else if(typeof n==="object"&&n!=null)s=n;$(document).ready(function(){$(i).movinary(s)})})}var r="http://www.movinary.de/libs/jquery/0.5/jquery.movinary.js";if(typeof e==="string"&&(e.indexOf("movinary.de/libs/")!=-1||e.indexOf("movinary.de/movinary/libs/")!=-1))r=e;if(typeof jQuery!="undefined"){i()}else{loadScript("http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",i)}}function loadScript(e,t){var n=document.createElement("script");n.type="text/javascript";if(n.readyState){n.onreadystatechange=function(){if(n.readyState=="loaded"||n.readyState=="complete"){n.onreadystatechange=null;t()}}}else{n.onload=function(){t()}}n.src=e;document.getElementsByTagName("head")[0].appendChild(n)};
+
+loadMovinaryLibrary(({affiliateId:0,finishUrl:"http://targetpage.com/addToCart/?videoId=[videoId]"});
+
+
+</script>
+<div id="movinary-iframe"></div>
+</body>
+</html>
